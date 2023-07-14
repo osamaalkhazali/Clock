@@ -1,0 +1,107 @@
+.clock{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: rgb(212, 212, 212);
+    border-radius: 50%;
+}
+
+.cFace{
+    width: 500px;
+    height: 500px;
+    background-image: url("https://clipart-library.com/new_gallery/127-1275900_clock-face-stamp-blank-analogue-and-digital-clock.png");
+    background-size:cover;
+    position: relative;
+    border-radius: 50%;
+    position: relative;
+}   
+
+.cFace::after {
+content: "KingOS";
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-shadow: 0 0 5px black;
+font-size: 25px;
+}
+.cFace::before {
+content: "WATCHES";
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-shadow: 0 0 5px black;
+font-size: 12px;
+}
+
+
+
+.c{
+width: 35px;
+background-color: black;
+height: 35px;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: orange;
+text-align: center;
+line-height: 2.4;
+font-size: 15px;
+font-weight: 900;
+z-index: 10;
+}
+
+
+.h{
+background-color: black;
+width: 130px ;
+height: 15px;
+position: absolute;
+top: 50%;
+left: 50%;
+border-radius: 20px;
+border: 3px solid white;
+transform-origin:  0 7.5px;
+transform: translate(0,-7.5px) rotate(0deg);
+z-index: 7;
+}
+
+.m{
+    background-color: black;
+    width: 170px ;
+    height: 10px;
+    position: absolute;
+    border: 3px solid white;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform-origin: 0 5px;
+    transform: translate(0,-5px) rotate(0deg);
+    transition: 1s;
+transition-timing-function: linear;
+z-index: 5;
+    
+}
+
+.s{
+    background-color: black;
+    width: 200px ;
+    height: 5px;
+    position: absolute;
+    opacity: 50%;
+top: 50%;
+left: 50%;
+border-radius: 20px;
+transform-origin: 0 2.5px;
+transform: translate(0,-2.5px) rotate(-90deg);
+transition: 1s;
+transition-timing-function: linear;
+z-index: 3;
+}
+
+
